@@ -28,7 +28,7 @@ Threat intelligence reports, research papers, and publications.
 |---|---|---|---|---|
 | 2024 | Supervisor / Collaborator | Drinik Demystified: A Detailed Examination of Android Malware Patterns, Detection Techniques, and Defensive Measures | [Ashra Hakim](https://www.linkedin.com/in/ashrahakim/) (PG Dissertation) | Analysis of Drinik Android malware targeting Indian taxpayers using a novel VM-WSA methodology combining VMware Workstation Pro, API Monitor, Process Monitor, TCPView and Windows Subsystem for Android to forensically examine permissions, communication patterns and behavioral indicators. |
 | 2025 | Mentor / Supervisor | Claude AI Forensic Artefact Script | WiCyS India mentees, Kristu Jayanti College | Guided students to develop a Python-based forensic automation tool that collects Claude AI artifacts on Windows. Tool published on GitHub as part of the WiCyS Student Chapter Mentorship Program. |
-| 2024 | Supervisor / Collaborator | Drinik Demystified: A Detailed Examination of Android Malware Patterns, Detection Techniques, and Defensive Measures | [Ashra Hakim](https://www.linkedin.com/in/ashrahakim/) (PG Dissertation) | Analysis of Drinik Android malware targeting Indian taxpayers using a novel VM-WSA methodology combining VMware Workstation Pro, API Monitor, Process Monitor, TCPView and Windows Subsystem for Android to forensically examine permissions, communication patterns and behavioral indicators. |
+
 | 2023 | Researcher | [Windows Subsystem for Android Forensics](https://www.sans.org/presentations/investigating-a-wsa-endpoint) | Debasis Parida | Research carried out on Windows Subsystem for Android (WSA) and presented at SANS DFIR Summit 2023. |
 
 
