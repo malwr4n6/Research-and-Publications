@@ -90,6 +90,15 @@ Threat intelligence reports, research papers, and publications.
 
 ---
 
+## Projects & Supervision
+
+| Year | Role | Title | Student | Abstract |
+|---|---|---|---|---|
+| 2024 | Supervisor / Collaborator | Drinik Demystified: A Detailed Examination of Android Malware Patterns, Detection Techniques, and Defensive Measures | [Ashra Hakim](https://www.linkedin.com/in/ashrahakim/) (PG Dissertation) | Analysis of Drinik Android malware targeting Indian taxpayers using a novel VM-WSA methodology combining VMware Workstation Pro, API Monitor, Process Monitor, TCPView and Windows Subsystem for Android to forensically examine permissions, communication patterns and behavioral indicators. |
+
+
+---
+
 ## License
 
 © Bhargav Rathod. All rights reserved.
