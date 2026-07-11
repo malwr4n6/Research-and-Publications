@@ -100,15 +100,6 @@ Threat intelligence reports, research papers, and publications.
 | Mounted volume | `/Volumes/NNApp/NNApp.app` |
 | Bundle identifier | `com.utils.nnapp` |
 
----
-
-## Training & Guest Lectures
-
-| Year | Role | Title | Organiser |
-|---|---|---|---|
-| 2025 | Mentor | [WiCyS India Student Chapter Mentorship Program](https://www.linkedin.com/company/wicys-india-affiliate/) | Women in CyberSecurity (WiCyS) India — Kristu Jayanti College, Bangalore (6-month program) |
-| 2025 | Guest Speaker | Overview of Digital Forensics | One-week Training Program on Digital Forensics & Incident Response, Rashtriya Raksha University — Pasighat Campus |
-
 
 ---
 
