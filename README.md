@@ -27,6 +27,8 @@ Threat intelligence reports, research papers, and publications.
 | Year | Role | Title | Student | Abstract |
 |---|---|---|---|---|
 | 2024 | Supervisor / Collaborator | Drinik Demystified: A Detailed Examination of Android Malware Patterns, Detection Techniques, and Defensive Measures | [Ashra Hakim](https://www.linkedin.com/in/ashrahakim/) (PG Dissertation) | Analysis of Drinik Android malware targeting Indian taxpayers using a novel VM-WSA methodology combining VMware Workstation Pro, API Monitor, Process Monitor, TCPView and Windows Subsystem for Android to forensically examine permissions, communication patterns and behavioral indicators. |
+| 2025 | Mentor / Supervisor | Claude AI Forensic Artefact Script | WiCyS India mentees, Kristu Jayanti College | Guided students to develop a Python-based forensic automation tool that collects Claude AI artifacts on Windows, identifying activity traces stored in `C:\Users\<user>\.claude\history.jsonl` and session files under `.claude\projects\`. Tool published on GitHub as part of the WiCyS Student Chapter Mentorship Program. Reference: [as-aix](https://github.com/acquiredsecurity/as-aix) |
+| 2024 | Supervisor / Collaborator | Drinik Demystified: A Detailed Examination of Android Malware Patterns, Detection Techniques, and Defensive Measures | [Ashra Hakim](https://www.linkedin.com/in/ashrahakim/) (PG Dissertation) | Analysis of Drinik Android malware targeting Indian taxpayers using a novel VM-WSA methodology combining VMware Workstation Pro, API Monitor, Process Monitor, TCPView and Windows Subsystem for Android to forensically examine permissions, communication patterns and behavioral indicators. |
 | 2023 | Researcher | [Windows Subsystem for Android Forensics](https://www.sans.org/presentations/investigating-a-wsa-endpoint) | Debasis Parida | Research carried out on Windows Subsystem for Android (WSA) and presented at SANS DFIR Summit 2023. |
 
 
@@ -104,6 +106,7 @@ Threat intelligence reports, research papers, and publications.
 
 | Year | Role | Title | Organiser |
 |---|---|---|---|
+| 2025 | Mentor | [WiCyS India Student Chapter Mentorship Program](https://www.linkedin.com/company/wicys-india-affiliate/) | Women in CyberSecurity (WiCyS) India — Kristu Jayanti College, Bangalore (6-month program) |
 | 2025 | Guest Speaker | Overview of Digital Forensics | One-week Training Program on Digital Forensics & Incident Response, Rashtriya Raksha University — Pasighat Campus |
 
 
