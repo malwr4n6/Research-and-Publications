@@ -4,61 +4,79 @@ Threat intelligence reports, research papers, and publications.
 
 ---
 
-## 2026
+## Publications
 
-### ClickFix Campaign Delivers macOS Infostealer via DMG
-**Publisher:** Palo Alto Networks Unit 42
-**Date:** June 20, 2026
-**Authors:** Manbendra Satpathy, Bhargav Rathod, Shazan Khaja, Veronika Senderovych
-**Link:** [Unit 42 Timely Threat Intel](https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2026-06-20-ClickFix-campaign-delivers-macOS-infostealer-via-DMG.txt)
+| Date | Title | Authors | Publisher | Link |
+|---|---|---|---|---|
+| Jun 20, 2026 | ClickFix Campaign Delivers macOS Infostealer via DMG | Manbendra Satpathy, **Bhargav Rathod**, Shazan Khaja, Veronika Senderovych | Palo Alto Networks Unit 42 | [View](https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2026-06-20-ClickFix-campaign-delivers-macOS-infostealer-via-DMG.txt) |
 
-#### Summary
-A new macOS ClickFix campaign uses a fake CAPTCHA page to trick users into installing malware. It instructs users to paste text into a Terminal command that silently downloads and mounts a malicious DMG file.
+---
 
-#### Key Findings
-- The mounted DMG contains a self-signed information-stealer (.app bundle) that asks for the user's password, harvests browser/wallet/messaging/keychain data, exfiltrates to two C2 servers, establishes LaunchAgent persistence, and trojanizes Ledger Live and Trezor Suite
-- The stealer payload is assessed to belong to the **AMOS (Atomic macOS Stealer)** lineage, specifically the modern **C++ Odyssey variant**, based on the malware's staging directory, persistence module and crypto-wallet trojanization behavior
-- The infection chain begins with a fake CAPTCHA page that instructs users to run a malicious command in Terminal, which invisibly mounts a DMG via `hdiutil attach -nobrowse` and executes the payload
-- The Mach-O binary is a Universal executable (Intel + ARM64), written in C++, with XOR-encrypted embedded config (8-byte rotating key) and SIMD-decrypted inline strings
+## 2026 — ClickFix Campaign Delivers macOS Infostealer via DMG
 
-#### Payload Capabilities (NNApp.app)
-- **Credential phishing** via fake osascript System Preferences dialog, validated with `dscl . -authonly`
-- **Browser theft** — 8 Chromium-based browsers (Arc, Brave, Chrome, Edge, Opera, Vivaldi, Yandex, CocCoc) and 5 Firefox-based browsers (LibreWolf, SeaMonkey, Tor Browser, Waterfox, Zen)
-- **Crypto wallet theft** — 13 standalone wallets (Electrum, Exodus, Atomic, Bitcoin Core, Binance, TonKeeper, and others) + 201 browser wallet extensions
-- **Messaging theft** — Telegram, Discord
-- **Additional collection** — Apple Notes, Safari cookies, macOS login keychain, user documents (PDF/TXT/RTF)
-- **Exfiltration** via `curl POST` to C2 `/api/reports/upload`
-- **Persistence** via LaunchAgent `~/Library/LaunchAgents/com.hlpr.agent.plist`
-- **Supply-chain hijack** — trojanizes Ledger Live and Trezor Suite in `/Applications`
+| Field | Details |
+|---|---|
+| **Publisher** | Palo Alto Networks Unit 42 |
+| **Date** | June 20, 2026 |
+| **Authors** | Manbendra Satpathy, Bhargav Rathod, Shazan Khaja, Veronika Senderovych |
+| **Malware Family** | AMOS (Atomic macOS Stealer) — C++ Odyssey variant |
+| **Architecture** | Universal Mach-O (Intel x64 + ARM64) |
+| **Initial Access** | Fake CAPTCHA page → Terminal paste → silent DMG mount via `hdiutil attach -nobrowse` |
+| **Staging Directory** | `~/.hlpr/` |
+| **Persistence** | LaunchAgent `~/Library/LaunchAgents/com.hlpr.agent.plist` |
+| **Config Encryption** | XOR, 8-byte rotating key: `a9048cf1c9d113b6` |
+| **String Encryption** | SIMD XOR, 32-byte key: `8111edf01ac6cb5c77e249d4e84fd92a85b5e89c2e2bef92fbe00b6f1cc2aa8e` |
+| **Build Info** | Build ID: 123 \| Campaign: 25 \| Build name: noname3 |
+| **C2 Endpoints** | `/api/reports/upload` \| `/api/agent/download` \| `/api/download/app-bundle` |
 
-#### Indicators of Compromise
+### Capabilities
 
-**IP Addresses**
-- `178.16.52[.]101` (svs-verificationdate[.]beer)
-- `196.251.107[.]171` (C2 server)
+| Category | Detail |
+|---|---|
+| **Credential Phishing** | Fake osascript System Preferences dialog; validated via `dscl . -authonly` |
+| **Browser Theft (Chromium)** | Arc, Brave, Chrome, Edge, Opera, Vivaldi, Yandex, CocCoc — cookies, login data, web data |
+| **Browser Theft (Firefox)** | LibreWolf, SeaMonkey, Tor Browser, Waterfox, Zen — cookies.sqlite, logins.json |
+| **Wallet Extensions** | 201 browser crypto wallet extension directories |
+| **Standalone Wallets** | Electrum, Exodus, Atomic, Bitcoin Core, Litecoin Core, DashCore, Guarda, Dogecoin, Binance, TonKeeper, Wasabi, Electron Cash, Electrum-LTC |
+| **Messaging** | Telegram, Discord (incl. keychain key via discord Safe Storage) |
+| **Additional Collection** | Apple Notes, Safari cookies, macOS login keychain, user documents (PDF/TXT/RTF) |
+| **Exfiltration** | `curl POST` to C2 `/api/reports/upload` with `user_id` and `build_tag` params |
+| **Supply-Chain Hijack** | Trojanizes Ledger Live and Trezor Suite in `/Applications` via `ditto -x -k` |
 
-**Domains**
-- `svs-verificationdate[.]beer`
-- `fewfwfwfwfwf[.]info` (C2)
+### Indicators of Compromise
 
-**SHA-256 Hashes**
-| File | Hash |
+#### Network
+
+| Type | Indicator |
+|---|---|
+| IP | `178.16.52[.]101` |
+| IP | `196.251.107[.]171` |
+| Domain | `svs-verificationdate[.]beer` |
+| Domain | `fewfwfwfwfwf[.]info` |
+| URL | `hxxp[:]//svs-verificationdate[.]beer/f0038a5f46720da5982b6984ceef10cf99359432e102b12a0b0657498d36f670` |
+| URL | `hxxps[:]//fewfwfwfwfwf[.]info` |
+| URL | `hxxp[:]//196.251.107[.]171:3000` |
+
+#### File Hashes
+
+| File | SHA-256 |
 |---|---|
 | s.01M0td.dmg | `25b6fc4f9c54a28ba7bfc4dfeafb62c99b59ea6f0d17679219b876b321965095` |
 | NNApp.app (bundle) | `067ad6221b2224d5cdb64e51c5516132d820cf4d7edf9ec170643943e79c04b7` |
 | Mach-O x64 | `d6f479736ba55d3c4e895c4940d035cf772f3192fb8dc496f09a801aed16d970` |
 | Mach-O ARM64 | `833008c03d40422192051584d829d730497108bef31751cceb0cc043dd96bbfb` |
 
-**Host Artifacts**
-- `~/.hlpr/` — staging directory
-- `~/.hlpr/User Name.txt`
-- `~/.hlpr/System Information.txt`
-- `~/Library/LaunchAgents/com.hlpr.agent.plist` — persistence
+#### Host Artifacts
 
-**URLs**
-- `hxxp[:]//svs-verificationdate[.]beer/f0038a5f46720da5982b6984ceef10cf99359432e102b12a0b0657498d36f670`
-- `hxxps[:]//fewfwfwfwfwf[.]info`
-- `hxxp[:]//196.251.107[.]171:3000`
+| Type | Path |
+|---|---|
+| Staging directory | `~/.hlpr/` |
+| Ownership file | `~/.hlpr/User Name.txt` |
+| System profile | `~/.hlpr/System Information.txt` |
+| Persistence | `~/Library/LaunchAgents/com.hlpr.agent.plist` |
+| Initial download | `/private/tmp/s.01M0td.dmg` |
+| Mounted volume | `/Volumes/NNApp/NNApp.app` |
+| Bundle identifier | `com.utils.nnapp` |
 
 ---
 
