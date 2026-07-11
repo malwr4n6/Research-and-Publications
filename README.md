@@ -104,7 +104,7 @@ Threat intelligence reports, research papers, and publications.
 
 | Year | Role | Title | Organiser |
 |---|---|---|---|
-| 2025 | Session Facilitator | Overview of Digital Forensics | One-week Training Program on Digital Forensics & Incident Response, Rashtriya Raksha University — Pasighat Campus |
+| 2025 | Guest Speaker | Overview of Digital Forensics | One-week Training Program on Digital Forensics & Incident Response, Rashtriya Raksha University — Pasighat Campus |
 
 
 ---
