@@ -8,7 +8,7 @@ Threat intelligence reports, research papers, and publications.
 
 | Date | Title | Authors | Publisher | Link |
 |---|---|---|---|---|
-| Jun 20, 2026 | ClickFix Campaign Delivers macOS Infostealer via DMG | Manbendra Satpathy, **Bhargav Rathod**, Shazan Khaja, Veronika Senderovych | Palo Alto Networks Unit 42 | [View](https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2026-06-20-ClickFix-campaign-delivers-macOS-infostealer-via-DMG.txt) |
+| June 2026 | ClickFix Campaign Delivers macOS Infostealer via DMG | Manbendra Satpathy, **Bhargav Rathod**, Shazan Khaja, Veronika Senderovych | Palo Alto Networks Unit 42 | [View](https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2026-06-20-ClickFix-campaign-delivers-macOS-infostealer-via-DMG.txt) |
 | 2019 | Analysis of Recent Web Browsers & Their Importance for Forensic Investigation Officers | Bhargav Rathod | International Journal of Law | — |
 | 2019 | Brave Browser Forensics | Bhargav Rathod | National Conference Proceedings — Role of Forensic Science in Crime Investigation and Administration of Justice | — |
 
