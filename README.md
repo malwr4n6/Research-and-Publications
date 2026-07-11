@@ -22,6 +22,15 @@ Threat intelligence reports, research papers, and publications.
 
 ---
 
+## Projects & Supervision
+
+| Year | Role | Title | Student | Abstract |
+|---|---|---|---|---|
+| 2024 | Supervisor / Collaborator | Drinik Demystified: A Detailed Examination of Android Malware Patterns, Detection Techniques, and Defensive Measures | [Ashra Hakim](https://www.linkedin.com/in/ashrahakim/) (PG Dissertation) | Analysis of Drinik Android malware targeting Indian taxpayers using a novel VM-WSA methodology combining VMware Workstation Pro, API Monitor, Process Monitor, TCPView and Windows Subsystem for Android to forensically examine permissions, communication patterns and behavioral indicators. |
+
+
+---
+
 ## 2026 — ClickFix Campaign Delivers macOS Infostealer via DMG
 
 | Field | Details |
@@ -87,15 +96,6 @@ Threat intelligence reports, research papers, and publications.
 | Initial download | `/private/tmp/s.01M0td.dmg` |
 | Mounted volume | `/Volumes/NNApp/NNApp.app` |
 | Bundle identifier | `com.utils.nnapp` |
-
----
-
-## Projects & Supervision
-
-| Year | Role | Title | Student | Abstract |
-|---|---|---|---|---|
-| 2024 | Supervisor / Collaborator | Drinik Demystified: A Detailed Examination of Android Malware Patterns, Detection Techniques, and Defensive Measures | [Ashra Hakim](https://www.linkedin.com/in/ashrahakim/) (PG Dissertation) | Analysis of Drinik Android malware targeting Indian taxpayers using a novel VM-WSA methodology combining VMware Workstation Pro, API Monitor, Process Monitor, TCPView and Windows Subsystem for Android to forensically examine permissions, communication patterns and behavioral indicators. |
-
 
 ---
 
