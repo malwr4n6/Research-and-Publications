@@ -26,7 +26,7 @@ Threat intelligence reports, research papers, and publications.
 
 | Year | Role | Title | Student | Abstract |
 |---|---|---|---|---|
-| 2024 | Co-Guide | PowerShell Script Analysis Automation | Rishika Jain (PG Minor Project, Rashtriya Raksha University — Gujarat Campus) | — |
+| 2024 | Co-Guide | PowerShell Script Analysis Automation | Rishika Jain (PG Minor Project, Rashtriya Raksha University — Gujarat Campus) | Analysis of obfuscated PowerShell scripts using static and dynamic tools (PSDecode, PowerDecode, StoQ Framework). Evaluates de-obfuscation techniques against Base64 encoding, string encryption and control flow alteration, with proposals for a unified scalable solution integrating threat intelligence. |
 | 2024 | Co-Guide | macOS Malware Analysis: A Critical Review of the Literature | Roshini John (PG Minor Project, Rashtriya Raksha University — Gujarat Campus) | — |
 | 2024 | Co-Supervisor | Drinik Demystified: A Detailed Examination of Android Malware Patterns, Detection Techniques, and Defensive Measures | [Ashra Hakim](https://www.linkedin.com/in/ashrahakim/) (PG Dissertation, Centurion University of Technology and Management, Odisha) | Analysis of Drinik Android malware targeting Indian taxpayers using a novel VM-WSA methodology combining VMware Workstation Pro, API Monitor, Process Monitor, TCPView and Windows Subsystem for Android to forensically examine permissions, communication patterns and behavioral indicators. |
 | 2023 | Researcher | [Windows Subsystem for Android Forensics](https://www.sans.org/presentations/investigating-a-wsa-endpoint) | Debasis Parida | Research carried out on Windows Subsystem for Android (WSA) and presented at SANS DFIR Summit 2023. |
