@@ -12,6 +12,16 @@ Threat intelligence reports, research papers, and publications.
 
 ---
 
+## Books
+
+| Year | Role | Title | Authors | Publisher | ISBN |
+|---|---|---|---|---|---|
+| Dec 2025 | Technical Reviewer | Android and iOS Mobile Forensics | Ravi Sheth, Keshav Kaushik, Chandresh Parekha, Narendrakumar Chayal | Apress, Berkeley CA | Softcover: 979-8-8688-1747-2 / eBook: 979-8-8688-1748-9 |
+| Jan 2025 | Technical Reviewer | Advanced Malware Analysis and Intelligence | Mahadev Thukaram, Dharmendra T | BPB Publications, India | 978-93-65899-504 |
+| 2021 | Book Editor | A Guide to Forensics and Indian Law: Investigating Crimes in the 21st Century | Anuj Kumar, Mahipal Singh Sankhala, Kapil Parihar | Legal Desire Media & Insights | 978-0-578-89799-8 |
+
+---
+
 ## 2026 — ClickFix Campaign Delivers macOS Infostealer via DMG
 
 | Field | Details |
@@ -77,17 +87,6 @@ Threat intelligence reports, research papers, and publications.
 | Initial download | `/private/tmp/s.01M0td.dmg` |
 | Mounted volume | `/Volumes/NNApp/NNApp.app` |
 | Bundle identifier | `com.utils.nnapp` |
-
----
-
-## Books
-
-| Year | Role | Title | Authors | Publisher | ISBN |
-|---|---|---|---|---|---|
-| Dec 2025 | Technical Reviewer | Android and iOS Mobile Forensics | Ravi Sheth, Keshav Kaushik, Chandresh Parekha, Narendrakumar Chayal | Apress, Berkeley CA | Softcover: 979-8-8688-1747-2 / eBook: 979-8-8688-1748-9 |
-| Jan 2025 | Technical Reviewer | Advanced Malware Analysis and Intelligence | Mahadev Thukaram, Dharmendra T | BPB Publications, India | 978-93-65899-504 |
-| 2021 | Book Editor | A Guide to Forensics and Indian Law: Investigating Crimes in the 21st Century | Anuj Kumar, Mahipal Singh Sankhala, Kapil Parihar | Dept. of Forensic Science & Criminal Investigation, Legal Desire Media & Insights | 978-0-578-89799-8 |
-
 
 ---
 
