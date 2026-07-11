@@ -100,6 +100,15 @@ Threat intelligence reports, research papers, and publications.
 
 ---
 
+## Training & Guest Lectures
+
+| Year | Role | Title | Organiser |
+|---|---|---|---|
+| 2025 | Session Facilitator | Overview of Digital Forensics | One-week Training Program on Digital Forensics & Incident Response, Rashtriya Raksha University — Pasighat Campus |
+
+
+---
+
 ## License
 
 © Bhargav Rathod. All rights reserved.
